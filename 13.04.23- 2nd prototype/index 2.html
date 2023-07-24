@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div style="width: 100px; height: 100px;">
+<button style="width: 100px; height: 50px;" , onclick="window.location.reload()" id="newGame">Start a New Game</button> <br>
+<button style="width: 100px; height: 50px;" , onclick="previewStep()" id="previewStep">Preview Step</button>   <!-- Number 2 : Erase last choice   -->
+</div> <br><br>
+
+
+    <table border="1">
+        <tr>
+            <td id="cell1" , onclick="onUserClick(cellsArrPic[0] , cellsArrId[0])"><img id="cellPic1"></td>
+            <td id="cell2" , onclick="onUserClick(cellsArrPic[1] , cellsArrId[1])"><img id="cellPic2"></td>
+            <td id="cell3" , onclick="onUserClick(cellsArrPic[2] , cellsArrId[2])"><img id="cellPic3"></td>
+        </tr>
+        <tr>
+            <td id="cell4" , onclick="onUserClick(cellsArrPic[3] , cellsArrId[3])"><img id="cellPic4"></td>
+            <td id="cell5" , onclick="onUserClick(cellsArrPic[4] , cellsArrId[4])"><img id="cellPic5"></td>
+            <td id="cell6" , onclick="onUserClick(cellsArrPic[5] , cellsArrId[5])"><img id="cellPic6"></td>
+        </tr>
+        <tr>
+            <td id="cell7" , onclick="onUserClick(cellsArrPic[6] , cellsArrId[6])"><img id="cellPic7"></td>
+            <td id="cell8" , onclick="onUserClick(cellsArrPic[7] , cellsArrId[7])"><img id="cellPic8"></td>
+            <td id="cell9" , onclick="onUserClick(cellsArrPic[8] , cellsArrId[8])"><img id="cellPic9"></td>
+        </tr>
+
+    </table>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
